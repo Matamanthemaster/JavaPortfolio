@@ -7,58 +7,108 @@ import javafx.scene.control.Button;
 public class Controller
 {
 
-    @FXML private Button btnSweetNo;
-    @FXML private Button btnSweetSugar;
-    @FXML private Button btnSweetSweetner;
-    @FXML private Text lblSweetNo;
-    @FXML private Text lblSweetSugar;
-    @FXML private Text lblSweetSweetener;
+    //gets instances of elements from the FXML via their fx:id.
+    @FXML private Button btnSweetenNone;
+    @FXML private Button btnSweetenSugar;
+    @FXML private Button btnSweetenSweetener;
+    @FXML private Text lblSweetenNone;
+    @FXML private Text lblSweetenSugar;
+    @FXML private Text lblSweetenSweetener;
+    @FXML private Text lblNoVotes;
 
-    private int noNothing = 0 ;
+    //incremental ints.
+    private int noNone = 0 ;
     private int noSugar = 0;
     private int noSweetener = 0;
+    private int totalVotes = 0;
 
-    @FXML protected void btnSweetNoPressed()
+    //called when btnSweetNome is pressed
+    @FXML protected void btnSweetenNonePressed()
     {
-        noNothing++;
+        noNone++;
 
-        if (noNothing == 1)
+        //set the number who voted none to the none display, grammatically formatting it.
+        if (noNone == 1)
         {
-            lblSweetNo.setText("1 person does not sweeten coffee.");
+            lblSweetenNone.setText("1 person does not sweeten coffee.");
         }
-        else if (noNothing >= 1)
+        else if (noNone >= 1)
         {
-            lblSweetNo.setText(noNothing + "people do not sweeten coffee.");
+            lblSweetenNone.setText(noNone + " people do not sweeten coffee.");
         }
+
+        /*runs method that should run each time a button is pressed.
+        Provides utilities such as checking visibility, counting total votes and disabling at 5 votes.*/
+        buttonPressed();
     }
 
-    @FXML protected void btnSweetSugarPressed()
+    //called when btnSweetenSugar is pressed.
+    @FXML protected void btnSweetenSugarPressed()
     {
         noSugar++;
 
+        //set the number who voted sugar to the none display, grammatically formatting it.
         if (noSugar == 1)
         {
-            lblSweetSugar.setText("1 person uses sugar.");
+            lblSweetenSugar.setText("1 person uses sugar.");
         }
         else if (noSugar >= 1)
         {
-            lblSweetSugar.setText(noSugar + "people use sugar.");
+            lblSweetenSugar.setText(noSugar + " people use sugar.");
         }
+
+        buttonPressed();
     }
 
-    @FXML protected void btnSweetSweetenerPressed()
+    //called when btnSweetenSweetener is pressed.
+    @FXML protected void btnSweetenSweetenerPressed()
     {
+
         noSweetener++;
 
+        //set the number who voted sweetener to the none display, grammatically formatting it.
         if (noSweetener == 1)
         {
-            lblSweetSweetener.setText("1 person uses sweetener.");
+            lblSweetenSweetener.setText("1 person uses sweetener.");
         }
         else if (noSweetener >= 1)
         {
-            lblSweetSweetener.setText(noSweetener + "people use sweetener.");
+            lblSweetenSweetener.setText(noSweetener + " people use sweetener.");
         }
 
+        buttonPressed();
+    }
+
+    private void buttonPressed()
+    {
+        //makes sure that the outputs are visible.
+        if (!lblSweetenNone.isVisible())
+        {
+            lblSweetenNone.setVisible(true);
+            lblSweetenSugar.setVisible(true);
+            lblSweetenSweetener.setVisible(true);
+        }
+
+        //calculates the new total of votes.
+        totalVotes = noNone + noSugar + noSweetener;
+
+        //displays the total votes on lblNoVotes with correct grammar.
+        if (totalVotes == 1)
+        {
+            lblNoVotes.setText("1 person has voted.");
+        }
+        else if (totalVotes > 1)
+        {
+            lblNoVotes.setText(totalVotes + " people have voted.");
+        }
+
+        //ends the voting by disabling buttons when we reach the maximum votes specified in the question.
+        if (totalVotes > 4)
+        {
+            btnSweetenNone.setDisable(true);
+            btnSweetenSugar.setDisable(true);
+            btnSweetenSweetener.setDisable(true);
+        }
     }
 
 }

@@ -10,11 +10,15 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stageMain) throws Exception{
+
+        //get the contents of main.fxml to append to the scene
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 
-        Scene sceneMain = new Scene(root, 300, 275);
+        //set the scene with the contents of main.fxml and default size.
+        Scene sceneMain = new Scene(root, 600, 275);
 
-        stageMain.setTitle("Hello World");
+        //set title, scene and show the stage.
+        stageMain.setTitle("5.1 Sweet Coffee");
         stageMain.setScene(sceneMain);
         stageMain.show();
     }
