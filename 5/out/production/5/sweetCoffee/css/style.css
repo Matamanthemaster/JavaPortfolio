@@ -1,0 +1,26 @@
+GridPane
+{
+    -fx-background-color: #676767;
+}
+
+Button
+{
+    -fx-background-color: #444444;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 4px;
+}
+
+Button:hover
+{
+    -fx-background-color: #676767;
+}
+
+.text
+{
+    -fx-wrap-text: true;
+    -fx-font-size: 14px;
+    -fx-fill: #cccccc;
+}
+

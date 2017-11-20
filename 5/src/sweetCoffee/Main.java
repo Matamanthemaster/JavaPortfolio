@@ -17,6 +17,9 @@ public class Main extends Application {
         //set the scene with the contents of main.fxml and default size.
         Scene sceneMain = new Scene(root, 600, 275);
 
+        //get the css file and add it to the scene's stylesheets.
+        sceneMain.getStylesheets().add(getClass().getResource("css/style.css").toExternalForm());
+
         //set title, scene and show the stage.
         stageMain.setTitle("5.1 Sweet Coffee");
         stageMain.setScene(sceneMain);

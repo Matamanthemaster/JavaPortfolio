@@ -29,9 +29,9 @@
       <Button fx:id="btnSweetenNone" mnemonicParsing="false" onAction="#btnSweetenNonePressed" styleClass="btn" text="I don't" GridPane.rowIndex="1" />
       <Button fx:id="btnSweetenSugar" mnemonicParsing="false" onAction="#btnSweetenSugarPressed" styleClass="btn" text="With Sugar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Button fx:id="btnSweetenSweetener" mnemonicParsing="false" onAction="#btnSweetenSweetenerPressed" styleClass="btn" text="With Sweetener" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-      <Text fx:id="lblSweetenNone" strokeType="OUTSIDE" strokeWidth="0.0" text="No one doesn't sweeten coffee." visible="false" GridPane.rowIndex="3" />
-      <Text fx:id="lblSweetenSugar" strokeType="OUTSIDE" strokeWidth="0.0" text="No one uses sugar. " visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-      <Text fx:id="lblSweetenSweetener" strokeType="OUTSIDE" strokeWidth="0.0" text="No one uses sweetener." visible="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-      <Text fx:id="lblNoVotes" strokeType="OUTSIDE" strokeWidth="0.0" text="No one has voted yet." GridPane.rowIndex="2" />
+      <Text fx:id="lblSweetenNone" styleClass="text" strokeType="OUTSIDE" strokeWidth="0.0" text="No one doesn't sweeten coffee." visible="false" GridPane.rowIndex="3" />
+      <Text fx:id="lblSweetenSugar" styleClass="text" strokeType="OUTSIDE" strokeWidth="0.0" text="No one uses sugar. " visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Text fx:id="lblSweetenSweetener" styleClass="text" strokeType="OUTSIDE" strokeWidth="0.0" text="No one uses sweetener." visible="false" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Text fx:id="lblNoVotes" styleClass="text" strokeType="OUTSIDE" strokeWidth="0.0" text="No one has voted yet." GridPane.rowIndex="2" />
    </children>
 </GridPane>
