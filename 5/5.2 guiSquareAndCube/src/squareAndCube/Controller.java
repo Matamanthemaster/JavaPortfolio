@@ -33,7 +33,6 @@ public class Controller {
 
         //calculate the new result, based on the current values of exponent and base, then set it to the output.
         Double result = Math.pow(base, exponent);
-
         lblResult.setText(result.toString());
     }
 }

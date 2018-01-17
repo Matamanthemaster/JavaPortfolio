@@ -1,0 +1,17 @@
+GridPane {
+    -fx-background-color: #444444;
+}
+
+.txt {
+    -fx-text-fill: #bbbbbb;
+    -fx-background-color: #676767;
+}
+
+#lblSymbolEquals {
+    -fx-text-fill: #bbbbbb;
+}
+
+#lblResult {
+    -fx-text-fill: #ff0000;
+    -fx-font-size: 14px;
+}
