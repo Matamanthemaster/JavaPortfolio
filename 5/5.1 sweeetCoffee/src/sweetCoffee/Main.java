@@ -18,7 +18,7 @@ public class Main extends Application {
         Scene sceneMain = new Scene(root, 600, 275);
 
         //get the css file and add it to the scene's stylesheets.
-        sceneMain.getStylesheets().add(getClass().getResource("../css/style.css").toExternalForm());
+        sceneMain.getStylesheets().add(getClass().getResource("css/style.css").toExternalForm());
 
         //set title, scene and show the stage.
         stageMain.setTitle("5.1 Sweet Coffee");
