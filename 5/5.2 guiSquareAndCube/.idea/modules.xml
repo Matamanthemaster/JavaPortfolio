@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/5.2 squareAndCube.iml" filepath="$PROJECT_DIR$/5.2 squareAndCube.iml" />
+      <module fileurl="file://$PROJECT_DIR$/5.2 guiSquareAndCube.iml" filepath="$PROJECT_DIR$/5.2 guiSquareAndCube.iml" />
     </modules>
   </component>
 </project>
