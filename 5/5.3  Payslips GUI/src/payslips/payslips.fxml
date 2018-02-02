@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="payslips.Controller">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="146.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="payslips.Controller">
   <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.0" minWidth="0.0" prefWidth="81.0" />
-    <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="206.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="318.0" minWidth="0.0" prefWidth="120.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="222.0" />
   </columnConstraints>
   <rowConstraints>
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -18,12 +18,12 @@
     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
   </rowConstraints>
    <children>
-      <Label id="lblDescHours" fx:id="lblDescHours" prefHeight="16.0" prefWidth="80.0" styleClass="lblDesc" text="Work Hours" />
-      <Label id="lblDescRate" fx:id="lblDescRate" prefHeight="16.0" prefWidth="78.0" styleClass="lblDesc" text="Pay Rate" GridPane.rowIndex="1" />
-      <Label id="lblDescPay" fx:id="lblDescPay" prefHeight="16.0" prefWidth="78.0" styleClass="lblDesc" text="Gross Pay" GridPane.rowIndex="2" />
+      <Label id="lblDescHours" fx:id="lblDescHours" prefHeight="16.0" prefWidth="81.0" styleClass="lblDesc" text="Work Hours" />
+      <Label id="lblDescRate" fx:id="lblDescRate" prefHeight="16.0" prefWidth="63.0" styleClass="lblDesc" text="Pay Rate" GridPane.rowIndex="1" />
+      <Label id="lblDescPay" fx:id="lblDescPay" prefHeight="16.0" prefWidth="69.0" styleClass="lblDesc" text="Gross Pay" GridPane.rowIndex="2" />
       <TextField id="txtHours" fx:id="txtHours" onKeyReleased="#textChanged" styleClass="txt" GridPane.columnIndex="1" />
       <TextField id="txtRate" fx:id="txtRate" onKeyReleased="#textChanged" styleClass="txt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-      <TextField id="txtDispPay" fx:id="txtDispPay" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <TextField id="txtDispPay" fx:id="txtDispPay" editable="false" text="0.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
          <styleClass>
             <String fx:value="txt" />
             <String fx:value="txtDisp" />

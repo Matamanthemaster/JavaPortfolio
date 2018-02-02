@@ -14,15 +14,16 @@ public class Main extends Application {
         //get the contents of Main.fxml to append to the scene
         Parent root = FXMLLoader.load(getClass().getResource("payslips.fxml"));
 
-        //set the scene with the contents of Main.fxml and default size.
+        //set the scene with the contentsof Main.fxml and default size.
         Scene sceneMain = new Scene(root, 500, 200);
 
 
-        //get the css file and add it to the scene's stylesheets.
-        //sceneMain.getStylesheets().add(getClass().getResource("css/style.css").toExternalForm());
+        //get the css files and add it to the scene's stylesheets.
+        sceneMain.getStylesheets().add(getClass().getResource("css/style.css").toExternalForm());
+        sceneMain.getStylesheets().add(getClass().getResource("css/colour.css").toExternalForm());
 
         //set title, scene and show the stage.
-        stageMain.setTitle("5.2 Square and Cube");
+        stageMain.setTitle("5.3 Payslips");
         stageMain.setScene(sceneMain);
         stageMain.show();
     }
