@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Text?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="commissions.Controller">
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="commissions.Controller">
   <tabs>
     <Tab fx:id="tabAdd" text="New">
          <content>
@@ -23,7 +23,7 @@
               </rowConstraints>
                <children>
                   <TextField id="txtCommission" fx:id="txtCommission" styleClass="txt" />
-                  <Button id="btnAdd" fx:id="btnAdd" mnemonicParsing="false" onMousePressed="#btnAddPressed" styleClass="btn" text="Button" GridPane.rowIndex="1" />
+                  <Button id="btnAdd" fx:id="btnAdd" mnemonicParsing="false" onMousePressed="#btnAddPressed" styleClass="btn" text="Add Commission" GridPane.rowIndex="1" />
                </children>
             </GridPane>
          </content></Tab>
@@ -39,9 +39,9 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Text id="lblDIspNoCommissions" fx:id="lblDIspNoCommissions" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="lbl" text="Text" />
-                  <Text id="lblDIspSumCommissions" fx:id="lblDIspSumCommissions" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="lbl" text="Text" GridPane.rowIndex="1" />
-                  <Text id="lblDIspAvgCommissions" fx:id="lblDIspAvgCommissions" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="lbl" text="Text" GridPane.rowIndex="2" />
+                  <Text id="lblDispNoCommissions" fx:id="lblDispNoCommissions" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="lbl" text="Text" />
+                  <Text id="lblDispSumCommissions" fx:id="lblDispSumCommissions" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="lbl" text="Text" GridPane.rowIndex="1" />
+                  <Text id="lblDispAvgCommissions" fx:id="lblDispAvgCommissions" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="lbl" text="Text" GridPane.rowIndex="2" />
                </children>
             </GridPane>
          </content></Tab>

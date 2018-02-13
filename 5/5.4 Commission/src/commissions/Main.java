@@ -16,7 +16,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("Main.fxml"));
 
         //set the scene with the contents of Main.fxml and default size.
-        Scene sceneMain = new Scene(root, 250, 100);
+        Scene sceneMain = new Scene(root, 600, 400);
 
 
         //get the css files and add them to the scene's stylesheets.
