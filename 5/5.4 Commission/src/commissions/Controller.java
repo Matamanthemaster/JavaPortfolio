@@ -28,6 +28,7 @@ public class Controller {
         try
         {
             sumCommissions += Double.parseDouble(txtCommission.getText());
+            txtCommission.setText("");
         }
         catch (java.lang.NumberFormatException e)
         {
@@ -72,7 +73,5 @@ public class Controller {
                 }
             }
         }
-
-
     }
 }
