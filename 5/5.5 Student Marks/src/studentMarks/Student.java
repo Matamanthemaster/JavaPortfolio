@@ -1,71 +1,89 @@
 package studentMarks;
 
 import javafx.event.ActionEvent;
-import javafx.scene.control.Button;
-import javafx.scene.control.Tab;
-import javafx.scene.control.TabPane;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
-
 import static javafx.geometry.Pos.CENTER;
+import static javafx.geometry.Pos.CENTER_RIGHT;
 
 public class Student
 {
     //Student's tab attributes
-    public Boolean exists;
     public Tab tab;
     public int id;
     public TextField txtForename;
     public TextField txtSurname;
     public TextField txtMark;
     public Text lblDispResult;
-    public Button btnCurDelete;
+    public Button btnDelete;
 
-
+    //method invoked on creating new instance of Student. Generates a tab with controls and event handling.
     public Student(TabPane parent, int newID)
     {
-        //create a tab, store it as the student's tab attribute, set the ID from the ID provided in the creation and set a title for new students.
+        /*create a tab, store it as the student's tab attribute, set the ID from the ID provided in the creation and set
+        a title for new students.*/
         this.tab = new Tab();
         this.id = newID;
         this.tab.setText("S" + newID + ": New Student");
 
-        //create elements that will become root and the child of the root (parent to all javafx scene objects). Center objects to everything appears in the middle of the tab.
-        HBox tabRoot = new HBox();
-        VBox tabRootsChild = new VBox();
-        tabRoot.setAlignment(CENTER);
-        tabRootsChild.setAlignment(CENTER);
+        /*create elements that will become nested in the tab, and nested in this nested element. Second and Third are
+        arbitrary names as their only point is to structure the scene objects. We need to reference them to append
+        children. Center objects to everything appears in the middle of the tab.*/
+        HBox hbSecond = new HBox();
+        VBox vbThird = new VBox();
+        hbSecond.setAlignment(CENTER);
+        vbThird.setAlignment(CENTER);
 
         //create javafx scene objects and assign them to this classes attributes. Set up attributes for the scene objects.
-        this.exists = true;
         this.txtForename = new TextField();
         this.txtSurname = new TextField();
         this.txtMark = new TextField();
         this.lblDispResult = new Text();
         this.lblDispResult.setVisible(false);
-        this.btnCurDelete = new Button("Delete Current Student");
+        this.btnDelete = new Button("Delete Current Student");
 
-        //Events handled by existing method. Compiler deals with how we get to the method. Method must implement the event type.
+        /*Events handled by existing method. Compiler deals with how we get to the method. Method must implement the event
+        type.*/
         this.txtForename.setOnKeyReleased(this::Update);
         this.txtSurname.setOnKeyReleased(this::Update);
         this.txtMark.setOnKeyReleased(this::Update);
-        this.btnCurDelete.setOnAction(this::Delete);
+        this.btnDelete.setOnAction(this::Delete);
 
-        //add the scene objects to their root. Create and add spacing so there is space between scene objects
-        tabRootsChild.setSpacing(5);
-        tabRootsChild.getChildren().add(this.txtForename);
-        tabRootsChild.getChildren().add(this.txtSurname);
-        tabRootsChild.getChildren().add(this.txtMark);
-        tabRootsChild.getChildren().add(this.lblDispResult);
-        tabRootsChild.getChildren().add(this.btnCurDelete);
+        /*encapsulate the text entries within a hbox, and have a text label before them. alignment so text fields match
+        in alignment.*/
+        HBox hbForename = new HBox();
+        hbForename.getChildren().add(new Text("Forename: "));
+        hbForename.getChildren().add(this.txtForename);
+        hbForename.setAlignment(CENTER_RIGHT);
+
+        HBox hbSurname = new HBox();
+        hbSurname.getChildren().add(new Text("Surname: "));
+        hbSurname.getChildren().add(this.txtSurname);
+        hbSurname.setAlignment(CENTER_RIGHT);
+
+        HBox hbMark = new HBox();
+        hbMark.getChildren().add(new Text("Marks: "));
+        hbMark.getChildren().add(this.txtMark);
+        hbMark.setAlignment(CENTER_RIGHT);
+
+
+        /*add the scene objects (and scene objects through their encapsulating hboxes) to their root. Create and add
+        spacing so there is space between scene objects.*/
+        vbThird.setSpacing(5);
+        vbThird.getChildren().add(hbForename);
+        vbThird.getChildren().add(hbSurname);
+        vbThird.getChildren().add(hbMark);
+        vbThird.getChildren().add(this.lblDispResult);
+        vbThird.getChildren().add(this.btnDelete);
 
         //Add the child to tabRoot (that contains all control objects) to tabRoot
-        tabRoot.getChildren().add(tabRootsChild);
+        hbSecond.getChildren().add(vbThird);
 
         //add the tab root to the current tab. Add the current tab to the parent, the tabpane.
-        this.tab.setContent(tabRoot);
+        this.tab.setContent(hbSecond);
         parent.getTabs().add(this.tab);
     }
 
@@ -102,6 +120,7 @@ public class Student
 
             //make sure that the result is always visible if no NumberFormatException was thrown.
             this.lblDispResult.setVisible(true);
+            this.lblDispResult.setVisible(true);
         }
         catch (NumberFormatException x)
         {
@@ -114,6 +133,13 @@ public class Student
 
     public void Delete(ActionEvent e)
     {
-        
+        //Remove the tab from the tabpane
+        this.tab.getTabPane().getTabs().remove(this.tab);
+
+        /*Call Controller.removeStudentTab to remove the current student from the array studentTabs (and kill this
+        instance). Have to get a statically defined variable from Controller that stores the instance of Controller used
+        by the FXMLLoader, as that is the instance of the class that stores the studentTabs array and instance of this
+        class*/
+        Controller.CurrentController.removeStudentTab(this.id);
     }
 }
