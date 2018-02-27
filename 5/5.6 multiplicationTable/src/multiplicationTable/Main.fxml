@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="300.0" maxWidth="200.0" minHeight="300.0" minWidth="200.0" prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="multiplicationTable.Controller">
+   <children>
+      <VBox fx:id="vbRoot" alignment="TOP_CENTER" maxHeight="300.0" maxWidth="200.0" minWidth="200.0" prefHeight="300.0" prefWidth="200.0">
+         <children>
+            <TextField id="txtIntTable" fx:id="txtIntTable" alignment="CENTER" maxWidth="100.0" minWidth="100.0" onKeyReleased="#txtIntTableTextChanged" prefWidth="100.0" promptText="Multiply Value" styleClass="txt" VBox.vgrow="NEVER">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+   </children>
+</Pane>
