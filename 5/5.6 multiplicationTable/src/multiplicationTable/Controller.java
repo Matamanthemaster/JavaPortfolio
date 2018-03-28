@@ -18,7 +18,8 @@ public class Controller
 
     //method ran after FXMLLoader has injected FXML values
     @FXML
-    public void initialize() {
+    public void initialize()
+    {
 
         for (int i = 1; i < lblOutMultiplication.length; i++)
         {
