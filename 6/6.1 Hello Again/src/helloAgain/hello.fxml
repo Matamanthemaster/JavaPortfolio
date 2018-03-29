@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="helloAgain.controllerHello">
+   <children>
+      <TextField fx:id="txtInQuantity" alignment="CENTER" maxWidth="150.0" minWidth="150.0" onKeyTyped="#txtInQuantityTextChanged" prefWidth="150.0" promptText="Quantity">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></TextField>
+      <ListView fx:id="lstOut" minWidth="150.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin></ListView>
+   </children>
+</VBox>
