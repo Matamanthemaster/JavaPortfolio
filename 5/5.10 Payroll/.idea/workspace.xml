@@ -67,17 +67,13 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/payroll/Controller.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/payroll/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#btnAddEmployeePressed#0;class#Controller#0" expanded="false" />
-                <element signature="method#removeEmployeeTab#0;class#Controller#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,6 +104,7 @@
       <find>student</find>
       <find>Student</find>
       <find>lblOutGrossPay</find>
+      <find>NumberFormat</find>
     </findStrings>
     <replaceStrings>
       <replace>Employee</replace>
@@ -172,7 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,8 +192,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -479,7 +476,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
             <element signature="method#Update#0;class#Employee#0" expanded="false" />
-            <element signature="method#Delete#0;class#Employee#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -524,7 +520,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
             <element signature="method#Update#0;class#Employee#0" expanded="false" />
-            <element signature="method#Delete#0;class#Employee#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -569,7 +564,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
             <element signature="method#Update#0;class#Employee#0" expanded="false" />
-            <element signature="method#Delete#0;class#Employee#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -614,7 +608,6 @@
             <element signature="imports" expanded="true" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
             <element signature="method#Update#0;class#Employee#0" expanded="false" />
-            <element signature="method#Delete#0;class#Employee#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -746,35 +739,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/payroll/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="102" lean-forward="false" selection-start-line="11" selection-start-column="102" selection-end-line="11" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#btnAddEmployeePressed#0;class#Controller#0" expanded="false" />
+            <element signature="method#removeEmployeeTab#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/payroll/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
-          <caret line="120" column="4" lean-forward="false" selection-start-line="120" selection-start-column="4" selection-end-line="120" selection-end-column="4" />
+          <caret line="283" column="13" lean-forward="false" selection-start-line="257" selection-start-column="1" selection-end-line="286" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Employee#0;class#Employee#0" expanded="false" />
             <element signature="method#Update#0;class#Employee#0" expanded="false" />
-            <element signature="method#Delete#0;class#Employee#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/payroll/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="68">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/payroll/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#btnAddEmployeePressed#0;class#Controller#0" expanded="false" />
-            <element signature="method#removeEmployeeTab#0;class#Controller#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
