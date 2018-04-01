@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="circleArea.controllerMain">
+   <children>
+      <VBox fx:id="root" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <TextField fx:id="txtInRadius" alignment="TOP_CENTER" maxHeight="25.0" maxWidth="200.0" minHeight="25.0" minWidth="200.0" onKeyTyped="#txtInRadiusTextChanged" prefHeight="25.0" prefWidth="200.0" promptText="Radius" />
+            <Text fx:id="lblOutStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+            <StackPane fx:id="stackpaneCircle" prefHeight="150.0" prefWidth="200.0">
+               <children>
+                  <Circle fx:id="circleOut" fill="#1fffa14e" stroke="BLACK" strokeType="INSIDE" />
+                  <Text fx:id="lblOutArea" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>
