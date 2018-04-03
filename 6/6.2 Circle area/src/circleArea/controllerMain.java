@@ -11,12 +11,12 @@ import java.text.DecimalFormat;
 
 public class controllerMain
 {
-    @FXML VBox root;//Used for positioning lblOutArea.
-    @FXML TextField txtInRadius;//Input of radius
-    @FXML Text lblOutStatus;//Status messages telling the user their errors.
-    @FXML StackPane stackpaneCircle;//used for positioning lblOutArea
-    @FXML Circle circleOut;//Circle display
-    @FXML Text lblOutArea;//Displaying area
+    @FXML private VBox root;//Used for positioning lblOutArea.
+    @FXML private TextField txtInRadius;//Input of radius
+    @FXML private Text lblOutStatus;//Status messages telling the user their errors.
+    @FXML private StackPane stackpaneCircle;//used for positioning lblOutArea
+    @FXML private Circle circleOut;//Circle display
+    @FXML private Text lblOutArea;//Displaying area
 
     @FXML
     void txtInRadiusTextChanged()
@@ -61,7 +61,7 @@ public class controllerMain
                 /*Based on testing, if below this arbitrary number the text is too large for the circle, so put it below
                 the circle otherwise it will fit so put it inside the circle. Only tested on windows. so could
                 be different for a different OS, or even a different resolution.*/
-                if (radius < 30)
+                if (radius < 34)
                 {
                     root.getChildren().add(lblOutArea);
                 }
@@ -73,7 +73,7 @@ public class controllerMain
                 /*Hide the status as we can display the area, set the area as a formatted decimal of the area + units.
                 Set the circle radius to the new radius and make sure lblOutArea is visible.*/
                 lblOutStatus.setVisible(false);
-                lblOutArea.setText(String.valueOf(df2DP.format(area) + "M²"));
+                lblOutArea.setText(String.valueOf(df2DP.format(area) + "px²"));
                 circleOut.setRadius(radius);
                 lblOutArea.setVisible(true);
             }

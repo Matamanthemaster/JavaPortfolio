@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Cylinder?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="volume.controllerMain">
+   <children>
+      <VBox fx:id="root" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="34.0" prefWidth="200.0" VBox.vgrow="NEVER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Radius">
+                     <HBox.margin>
+                        <Insets right="5.0" top="3.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="txtInRadius" alignment="TOP_CENTER" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" onKeyTyped="#txtInTextChanged" prefHeight="25.0" prefWidth="150.0" promptText="Radius">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="36.0" prefWidth="200.0" VBox.vgrow="NEVER">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Height">
+                     <HBox.margin>
+                        <Insets right="5.0" top="3.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="txtInHeight" alignment="TOP_CENTER" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" onKeyTyped="#txtInTextChanged" prefHeight="25.0" prefWidth="150.0" promptText="Height" />
+               </children>
+            </HBox>
+            <Text fx:id="lblOutStatus" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+            <StackPane fx:id="stackpaneCylinder" prefHeight="0.0" prefWidth="191.0">
+               <children>
+                  <Cylinder fx:id="cylinderOut" height="0.0" radius="0.0" />
+                  <Text fx:id="lblOutArea" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" visible="false" />
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>
