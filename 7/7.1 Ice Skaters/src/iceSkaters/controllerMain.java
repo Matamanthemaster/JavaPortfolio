@@ -126,7 +126,7 @@ public class controllerMain
         displayAverage();
     }
 
-    @FXML
+    @FXML   
     protected void ckEdgeCasesCheckChanged()
     {
         /*On updating the preference for if the user wants to count min and max values, display the average to show an
