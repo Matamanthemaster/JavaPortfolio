@@ -68,8 +68,8 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/moduleMarks/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -78,6 +78,21 @@
                 <element signature="imports" expanded="true" />
                 <element signature="method#btnAddStudentPressed#0;class#Controller#0" expanded="false" />
                 <element signature="method#removeStudentTab#0;class#Controller#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/moduleMarks/Student.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="533">
+              <caret line="112" column="50" lean-forward="true" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#Update#0;class#Student#0" expanded="false" />
+                <element signature="method#changeMark#0;class#Student#0" expanded="false" />
+                <element signature="method#Delete#0;class#Student#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -164,9 +179,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -462,14 +477,14 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Controller.java">
@@ -508,14 +523,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Controller.java">
@@ -566,14 +581,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.java">
@@ -600,14 +615,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Controller.java">
@@ -645,14 +660,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.java">
@@ -666,14 +681,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Controller.java">
@@ -740,27 +755,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="51" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/moduleMarks/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="104" column="23" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#Update#0;class#Student#0" expanded="false" />
-            <element signature="method#changeMark#0;class#Student#0" expanded="false" />
-            <element signature="method#Delete#0;class#Student#0" expanded="false" />
-          </folding>
-        </state>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/moduleMarks/Main.java">
@@ -781,6 +783,19 @@
             <element signature="imports" expanded="true" />
             <element signature="method#btnAddStudentPressed#0;class#Controller#0" expanded="false" />
             <element signature="method#removeStudentTab#0;class#Controller#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/moduleMarks/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="112" column="50" lean-forward="true" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Update#0;class#Student#0" expanded="false" />
+            <element signature="method#changeMark#0;class#Student#0" expanded="false" />
+            <element signature="method#Delete#0;class#Student#0" expanded="false" />
           </folding>
         </state>
       </provider>
