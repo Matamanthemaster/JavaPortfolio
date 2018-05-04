@@ -38,11 +38,11 @@ class Staff
   String name;
   String job;
   double salary;
-  Date birthday;
-  Date payDate;
+  int birthday;
+  int payDate;
   String currentTask;
 
-  public static void Staff(int id, String name, String job, double salary)
+  public static void Staff(int id, String name, String job, double salary, int birthday, int payDate)
   {
     //assign variables to the current instance
   }
@@ -71,7 +71,7 @@ class Exhibit
     //assign variables to the current instance.
   }
 
-  void addVehicle(String licencePlate, String History, VehicleType vehicleType)
+  void addVehicle()
   {
     //creates a new instance of Vehicle in the next free index.
   }
@@ -99,9 +99,12 @@ class Vehicle
   String history;
   String colour;
   VehicleType type;
-  Date productionDate;
+  Integer noDoors;
+  Integer engineSize;
+  String fuelType;
+  int productionDate;
 
-  public static void Vehicle(int id, String licencePlate, String history, VehicleType type)
+  public static void Vehicle(int id, String licencePlate, String history, String colour, VehicleType type, Integer noDoors, Integer engineSize, String fuelType, int productionDate)
   {
     //assigns default variables to the current instance of Vehicle.
   }
@@ -124,11 +127,16 @@ class VehicleType
   protected String name;
   protected int noWheels;
   protected int noSeats;
-  protected  String use;
+  protected String use;
 
   public static void VehicleType(int id, String name, int noWheels, int noSeats, String use)
   {
     //assigns default variables to vehicleType
+  }
+
+  public static void getTypes()
+  {
+    //returns a list of all types, including IDs.
   }
 
   protected static void removeType(String name)
